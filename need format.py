@@ -5,24 +5,35 @@ class TreeNode:
         self.right = None
 
 
-# 判断以root2为根节点的树是否包含在以root1为根节点的树中
-def has_substruct(root1, root2):
-    if root1 is None or root2 is None:  # 左右任一根节点空则失匹，因为空树不算子结构
-        return False
-    if root1.val != root2.val:
-        return False
-    else:
-        # 首先从根节点判断是否左边包含右边
-        return (contain_rec(root1, root2) or
-                has_substruct(root1.left, root2) or
-                has_substruct(root1.right, root2))
+class Stack:
+    def __init__(self):
+        self.items = []
+        self.size = 0
+
+    def push(self, x):
+        self.items.insert(0, x)
+        self.size += 1
+
+    def pop(self):
+        self.size -= 1
+        return self.items.pop()
 
 
-# 递归判断左节点是否包含右节点，并且空树的处理由has_substruct()完成
-# 所以这里当右节点为空时应该返回True
-def contain_rec(node1, node2):
-    if node2 is None:
-        return True
-    if node1 is None or node1.val != node2.val:
-        return False
-    return contain_rec(node1.left, node2.left) and contain_rec(node1.right, node2.right)
+# 使用循环与栈来模拟递归
+# 先将根节点入栈，然后类似层次遍历，左右子节点入栈
+# 每弹出一个节点，交换其左右子节点
+def mirror_tree(root_node):
+    if root_node is None:  # 空树判断
+        return root_node
+
+    stack = Stack()
+    stack.push(root_node)  # 根节点入栈
+
+    while stack.size > 0:
+        node = stack.pop()
+        node.left, node.right = node.right, node.left  # 镜像翻转子节点
+        # 再把子节点入栈
+        if node.left:
+            stack.push(node.left)
+        if node.right:
+            stack.push(node.right)
