@@ -1,26 +1,28 @@
-def re_match(string, pattern):
-    # 几种特殊情况
-    if string is None or pattern is None:
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+
+# 判断以root2为根节点的树是否包含在以root1为根节点的树中
+def has_substruct(root1, root2):
+    if root1 is None or root2 is None:  # 左右任一根节点空则失匹，因为空树不算子结构
         return False
-    elif len(string) == 0 and len(pattern) == 0:
-        return True
-    elif len(string) > 0 and len(pattern) == 0:
+    if root1.val != root2.val:
         return False
-
-    # 匹配位置后面出现"*"的情况，"*"的优先级要高于"."
-    elif len(pattern) > 1 and pattern[1] == '*':
-        # 分为两种情况，可以匹配或无法匹配
-        if len(string) > 0 and (string[0] == pattern[0] or pattern[0] == '.'):  # 可以匹配，字符相等或出现任意符
-            return (re_match(string, pattern[2:]) or  # 跳过'*'
-                    re_match(string[1:], pattern[2:]) or  # '*'匹配一次
-                    re_match(string[1:], pattern))  # '*'匹配多次
-        else:  # 无法匹配
-            return re_match(string, pattern[2:])
-
-    # 匹配成功的情况，字符相等或遇到任意匹配符"."
-    elif len(string) > 0 and (string[0] == pattern[0] or pattern[0] == '.'):
-        return re_match(string[1:], pattern[1:])
-
-    # 字符不等
     else:
+        # 首先从根节点判断是否左边包含右边
+        return (contain_rec(root1, root2) or
+                has_substruct(root1.left, root2) or
+                has_substruct(root1.right, root2))
+
+
+# 递归判断左节点是否包含右节点，并且空树的处理由has_substruct()完成
+# 所以这里当右节点为空时应该返回True
+def contain_rec(node1, node2):
+    if node2 is None:
+        return True
+    if node1 is None or node1.val != node2.val:
         return False
+    return contain_rec(node1.left, node2.left) and contain_rec(node1.right, node2.right)
