@@ -1,39 +1,52 @@
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+# 思路：归并排序
+
+def InversePairs(numbers):
+    if not numbers:
+        return 0
+
+    copy_num = numbers[:]
+    cnt = InversePairsRec(numbers, copy_num, 0, len(numbers) - 1)  # 递归归并排序并计数
+    return cnt
 
 
-class Stack:
-    def __init__(self):
-        self.items = []
-        self.size = 0
+def InversePairsRec(numbers, copy_num, start, end):
+    if start == end:  # 单元素
+        copy_num[start] = numbers[start]
+        return 0
 
-    def push(self, x):
-        self.items.insert(0, x)
-        self.size += 1
+    mid = (end + start) // 2
 
-    def pop(self):
-        self.size -= 1
-        return self.items.pop()
+    # 将左右两部分递归排序并计数
+    left_cnt = InversePairsRec(numbers, copy_num, start, mid)
+    right_cnt = InversePairsRec(numbers, copy_num, mid + 1, end)
+
+    # 在左右部分均有序之后，对该轮排序并计数。从最大(右)的元素开始往前计数
+    left_idx = mid
+    right_idx = end
+    copy_idx = end
+    cnt = 0
+    # 左右部分均从后往前排序
+    while left_idx >= start and right_idx > mid:
+        if numbers[left_idx] > numbers[right_idx]:  # 如果左边值最大值大于右边最大值
+            copy_num[copy_idx] = numbers[left_idx]  # 在copy_num中放置最大值再移动指针
+            copy_idx -= 1
+            left_idx -= 1
+            cnt += right_idx - mid  # 左边最大值肯定大于右边所有值，逆序对=右边值的数
+        else:  # 若右边最大值已经有序
+            copy_num[copy_idx] = numbers[right_idx]  # 则直接放置，再移动指针
+            copy_idx -= 1
+            right_idx -= 1
+    # 将numbers的剩余部分放入copy_num
+    while left_idx >= start:
+        copy_num[copy_idx] = numbers[left_idx]
+        copy_idx -= 1
+        left_idx -= 1
+    while right_idx > mid:
+        copy_num[copy_idx] = numbers[right_idx]
+        copy_idx -= 1
+        right_idx -= 1
+
+    return cnt + left_cnt + right_cnt
 
 
-# 使用循环与栈来模拟递归
-# 先将根节点入栈，然后类似层次遍历，左右子节点入栈
-# 每弹出一个节点，交换其左右子节点
-def mirror_tree(root_node):
-    if root_node is None:  # 空树判断
-        return root_node
-
-    stack = Stack()
-    stack.push(root_node)  # 根节点入栈
-
-    while stack.size > 0:
-        node = stack.pop()
-        node.left, node.right = node.right, node.left  # 镜像翻转子节点
-        # 再把子节点入栈
-        if node.left:
-            stack.push(node.left)
-        if node.right:
-            stack.push(node.right)
+InversePairs([1, 2, 1, 2, 1])
