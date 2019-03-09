@@ -1,24 +1,29 @@
-# 思路：使用双指针往中心遍历即可
-# 假定字符串中还包含复杂字符，需要过滤
+# 思路：设置新数组，原数组设双指针，逐位比较元素并插入新数组
 
-def isPalindrome(s):
-    if len(s) < 2:
-        return True
+def merge(nums1, m, nums2, n):
+    if not nums1:
+        return nums2
+    if not nums2:
+        return nums1
 
-    l_idx, r_idx = 0, len(s) - 1
-    while l_idx < r_idx:
-        while not s[l_idx].isalnum and l_idx < r_idx:
-            l_idx += 1
-        while not s[r_idx].isalnum and l_idx < r_idx:
-            r_idx -= 1
+    tmp_arr = [None] * (len(nums1) + len(nums2))
+    idx1 = idx2 = idx_tmp = 0
 
-        if s[l_idx].lower() != s[r_idx].lower():
-            return False
+    while idx1 < len(nums1) and idx2 < len(nums2):
+        if nums1[idx1] < nums2[idx2]:
+            tmp_arr[idx_tmp] = nums1[idx1]
+            idx1 += 1
+        else:
+            tmp_arr[idx_tmp] = nums2[idx2]
+            idx2 += 1
+        idx_tmp += 1
 
-        l_idx += 1
-        r_idx -= 1
+    if idx1 == len(nums1) - 1:
+        tmp_arr[idx_tmp:] = nums2[idx2:]
+    if idx2 == len(nums2) - 1:
+        tmp_arr[idx_tmp:] = nums1[idx1:]
 
-    return True
+    return tmp_arr
 
 
-isPalindrome("A man, a plan, a canal: Panama")
+merge([1, 2, 3], 3, [2, 5, 6], 3)
