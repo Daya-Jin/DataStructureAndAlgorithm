@@ -1,29 +1,55 @@
-# 思路：俯视图的面积最容易，为立方柱的个数，即求矩阵中非零元素的个数
-# 两个侧视图，分别对应矩阵每行最大值的和与每列最大值的和
+import sys
 
-def projectionArea(grid) -> int:
-    if not grid:
-        return None
+rows = int(sys.stdin.readline().strip())
 
-    n = len(grid)
+mat = list()
+for i in range(rows):
+    mat.append(sys.stdin.readline().strip())
 
-    area = 0
-    for row in range(n):
-        row_max, col_max = 0, 0
-        for col in range(n):
-            if grid[row][col]:
-                area += 1
+cols = len(mat[0])
 
-            row_max = max(row_max, grid[row][col])
+mat_cnt = [[0 for _ in range(cols)] for _ in range(rows)]
 
-            # 由于是立方矩阵，在行扫描的同时，交换行列坐标即可实现列扫描
-            row_col = max(col_max, grid[col][row])
+# 将矩阵转换成相邻的1的个数
+for row in range(rows):
+    for col in range(0, cols):
+        if col==0:
+            mat_cnt[row][col]=int(mat[row][col])
+            continue
+        if mat[row][col] == '1' and mat[row][col - 1]=='1':
+            mat_cnt[row][col] = mat_cnt[row][col-1]+1
+        elif mat[row][col] == '1' and mat[row][col - 1]=='0':
+            mat_cnt[row][col] = int(mat[row][col])
 
-        area += row_max
-        area += col_max
+del mat
 
-    return area
+# 从上往下找连续值
+cur_max=0
+for col in range(cols):
+    sin_col=list()
+    for row in range(rows):
+        sin_col.append(mat_cnt[row][col])
 
+    for i,val in enumerate(sin_col):
+        if val==0:
+            continue
+        cnt=1
+        tmp_idx=i-1
+        while tmp_idx>0 and tmp_idx<len(sin_col):
+            if sin_col[tmp_idx]>=val:
+                tmp_idx-=1
+                cnt+=1
+            else:
+                break
+        tmp_idx=i+1
+        while tmp_idx>0 and tmp_idx<len(sin_col):
+            if sin_col[tmp_idx] >= val:
+                tmp_idx += 1
+                cnt+=1
+            else:
+                break
+        ret=min(cnt,val)
+        if ret>cur_max:
+            cur_max=ret
 
-projectionArea([[1, 2],
-                [3, 4]])
+print(cur_max**2)
