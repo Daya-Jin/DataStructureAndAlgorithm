@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37f89aa4-385b-4ffa-9cd8-b74a1d4fc726" name="Default Changelist" comment="" />
+    <list default="true" id="37f89aa4-385b-4ffa-9cd8-b74a1d4fc726" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Array-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Array-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Str-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Str-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/bit_opt-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/bit_opt-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/linkedlist-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/linkedlist-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/math_problem-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/math_problem-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/queue  &amp; stack-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/queue  &amp; stack-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/sort&amp;search-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/sort&amp;search-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/tree-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/tree-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Array.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Str.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Str.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bit_opt.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/bit_opt.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedlist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/linkedlist.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_problem.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/math_problem.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/need format.py" beforeDir="false" afterPath="$PROJECT_DIR$/need format.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue  &amp; stack.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/queue  &amp; stack.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort&amp;search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/sort&amp;search.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tree.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,18 +28,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataStructureAndAlgorithm$need_format.coverage" NAME="need format Coverage Results" MODIFIED="1552481362783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataStructureAndAlgorithm$need_format.coverage" NAME="need format Coverage Results" MODIFIED="1553411286470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1731951207">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -35,12 +55,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="918" />
+          <entry key="py" value="1009" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="918" />
+          <entry key="Python" value="1009" />
         </counts>
       </usages-collector>
     </session>
@@ -50,8 +70,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/need format.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+            <state relative-caret-position="132">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <marker date="1553429304797" expanded="true" signature="41:50" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,7 +98,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="391" />
+    <option name="x" value="27" />
+    <option name="y" value="362" />
     <option name="width" value="1540" />
     <option name="height" value="970" />
   </component>
@@ -189,15 +213,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="313" y="0" width="1232" height="776" extended-state="0" />
+    <frame x="22" y="290" width="1232" height="776" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496112" visible="true" weight="0.27683136" />
-      <window_info id="Structure" order="1" sideWeight="0.503888" side_tool="true" visible="true" weight="0.27683136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48833594" visible="true" weight="0.302385" />
+      <window_info id="Structure" order="1" sideWeight="0.5116641" side_tool="true" visible="true" weight="0.302385" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3271028" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5233645" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32659408" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41213062" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -220,17 +244,6 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/need format.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -241,8 +254,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/need format.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <marker date="1553429304797" expanded="true" signature="41:50" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
