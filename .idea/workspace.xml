@@ -5,17 +5,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Array-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Array-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/DynamicProgramming-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/DynamicProgramming-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Lib_Implementation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Lib_Implementation-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Str-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Str-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/linkedlist-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/linkedlist-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/循环与递归-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/循环与递归-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Hash_table-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Hash_table-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/sort&amp;search-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/sort&amp;search-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/回溯-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/回溯-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Array.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Array.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicProgramming.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicProgramming.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib_Implementation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Lib_Implementation.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Str.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Str.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/linkedlist.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hash_table.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Hash_table.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/need format.py" beforeDir="false" afterPath="$PROJECT_DIR$/need format.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/循环与递归.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/循环与递归.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort&amp;search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/sort&amp;search.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/回溯.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/回溯.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,19 +22,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataStructureAndAlgorithm$need_format.coverage" NAME="need format Coverage Results" MODIFIED="1554192288704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataStructureAndAlgorithm$need_format.coverage" NAME="need format Coverage Results" MODIFIED="1554880180855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1731951207">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="7" />
+          <entry key="project.open.time.6" value="9" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,12 +49,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1009" />
+          <entry key="py" value="1017" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1009" />
+          <entry key="Python" value="1017" />
         </counts>
       </usages-collector>
     </session>
@@ -66,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/need format.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="110">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -90,9 +88,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="466" />
-    <option name="y" value="78" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="206" />
+    <option name="y" value="36" />
     <option name="width" value="1540" />
     <option name="height" value="970" />
   </component>
@@ -118,7 +116,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,11 +127,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ML_for_learner" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -206,15 +204,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="373" y="63" width="1232" height="776" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4821151" visible="true" weight="0.32282794" />
-      <window_info id="Structure" order="1" sideWeight="0.5178849" side_tool="true" visible="true" weight="0.32282794" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47801417" visible="true" weight="0.2680965" />
+      <window_info id="Structure" order="1" sideWeight="0.5219858" side_tool="true" visible="true" weight="0.2680965" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32659408" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41213062" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4212766" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -242,8 +241,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/need format.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="2" />
+          <line>14</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -258,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/need format.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="110">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
