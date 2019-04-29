@@ -1,30 +1,39 @@
-# 思路：考虑从一个中心字符或两个中心字符往左右扩展
-# 如果扩展后的左右两字符相等，则生成新的回文
+def solve(board) -> None:
+    if not board or not board[0]:
+        return board
+    rows, cols = len(board), len(board[0])
+
+    def trans_rec(row, col):
+        if board[row][col] == 'O':
+            board[row][col] = '#'
+            if row > 0 and board[row-1][col] == 'O':
+                trans_rec(row-1, col)
+            if row < cols-1 and board[row+1][col] == 'O':
+                trans_rec(row+1, col)
+            if col > 0 and board[row][col-1] == 'O':
+                trans_rec(row, col-1)
+            if col < cols-1 and board[row][col+1] == 'O':
+                trans_rec(row, col+1)
+
+    # 将跟边缘连接的'O'保护起来
+    for row in range(rows):
+        for col in range(cols):
+            if (board[row][col] == 'O' and (row == 0 or col == 0 or row == rows-1 or col == cols-1)):
+                trans_rec(row, col)
+
+    print(board)
+
+    for row in range(rows):
+        for col in range(cols):
+            if board[row][col] == 'O':
+                board[row][col] = 'X'
+            if board[row][col] == '#':
+                board[row][col] = 'O'
 
 
-def longestPalindrome(s: str) -> str:
-    res = ''
-    if not s:
-        return res
-
-    for cent_idx in range(len(s)):
-        l, r = cent_idx, cent_idx    # 单个字符的初始边界
-        while l >= 0 and r < len(s) and s[l] == s[r]:
-            # 扩展
-            l -= 1
-            r += 1
-        if r-l+1 > len(res):
-            res = s[l:r+1]
-
-        l, r = cent_idx, cent_idx+1    # 两个字符的初始边界
-        while l >= 0 and r < len(s) and s[l] == s[r]:
-            # 扩展
-            l -= 1
-            r += 1
-        if r-l+1 > len(res):
-            res = s[l:r+1]
-
-    return res
-
-
-longestPalindrome("cbbd")
+mat = [["X", "O", "X", "O", "X", "O"],
+       ["O", "X", "O", "X", "O", "X"],
+       ["X", "O", "X", "O", "X", "O"],
+       ["O", "X", "O", "X", "O", "X"]]
+solve(mat)
+mat
