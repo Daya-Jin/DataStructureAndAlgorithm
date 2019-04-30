@@ -1,39 +1,19 @@
-def solve(board) -> None:
-    if not board or not board[0]:
-        return board
-    rows, cols = len(board), len(board[0])
+def wordBreak(s: str, wordDict) -> bool:
+    if not s:
+        return True
 
-    def trans_rec(row, col):
-        if board[row][col] == 'O':
-            board[row][col] = '#'
-            if row > 0 and board[row-1][col] == 'O':
-                trans_rec(row-1, col)
-            if row < cols-1 and board[row+1][col] == 'O':
-                trans_rec(row+1, col)
-            if col > 0 and board[row][col-1] == 'O':
-                trans_rec(row, col-1)
-            if col < cols-1 and board[row][col+1] == 'O':
-                trans_rec(row, col+1)
+    wordDict = set(wordDict)
 
-    # 将跟边缘连接的'O'保护起来
-    for row in range(rows):
-        for col in range(cols):
-            if (board[row][col] == 'O' and (row == 0 or col == 0 or row == rows-1 or col == cols-1)):
-                trans_rec(row, col)
-
-    print(board)
-
-    for row in range(rows):
-        for col in range(cols):
-            if board[row][col] == 'O':
-                board[row][col] = 'X'
-            if board[row][col] == '#':
-                board[row][col] = 'O'
+    n = len(s)
+    dp = [False for _ in range(n + 1)]  # dp[0]对应空字串
+    dp[0] = True
+    for tail in range(1, n + 1):
+        for cut in range(0, tail + 1):
+            right_s = s[cut:tail]
+            if dp[cut] == True and s[cut:tail] in wordDict:
+                dp[cut] = True
+                break
+    return dp[-1]
 
 
-mat = [["X", "O", "X", "O", "X", "O"],
-       ["O", "X", "O", "X", "O", "X"],
-       ["X", "O", "X", "O", "X", "O"],
-       ["O", "X", "O", "X", "O", "X"]]
-solve(mat)
-mat
+wordBreak("leetcode", ["leet", "code"])
