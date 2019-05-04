@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37f89aa4-385b-4ffa-9cd8-b74a1d4fc726" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DynamicProgramming/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicProgramming/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicProgramming/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicProgramming/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Search/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Search/Untitled.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/.ipynb_checkpoints/Index-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/Index.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tree/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Tree/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tree/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Tree/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/need format.py" beforeDir="false" afterPath="$PROJECT_DIR$/need format.py" afterDir="false" />
@@ -17,40 +16,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataStructureAndAlgorithm$need_format.coverage" NAME="need format Coverage Results" MODIFIED="1556607146419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataStructureAndAlgorithm$need_format.coverage" NAME="need format Coverage Results" MODIFIED="1556981302299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1731951207">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
+          <entry key="project.closed" value="31" />
           <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="13" />
-          <entry key="project.open.time.7" value="5" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.open.time.7" value="6" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1066" />
+          <entry key="py" value="1073" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1066" />
+          <entry key="Python" value="1073" />
         </counts>
       </usages-collector>
     </session>
@@ -60,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/need format.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="197">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -85,8 +84,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="y" value="47" />
+    <option name="x" value="-4" />
+    <option name="y" value="46" />
     <option name="width" value="1540" />
     <option name="height" value="970" />
   </component>
@@ -112,6 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,7 +123,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,9 +199,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="38" width="1232" height="776" extended-state="0" />
+    <frame x="-3" y="37" width="1232" height="776" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47375888" visible="true" weight="0.22827938" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47375888" visible="true" weight="0.23253833" />
       <window_info id="Structure" order="1" sideWeight="0.52549577" side_tool="true" weight="0.27882037" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -236,8 +235,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/need format.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="15" />
+          <line>14</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -245,15 +244,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="311" lean-forward="true" selection-start-line="311" selection-end-line="311" />
+        <state relative-caret-position="116">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/need format.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="197">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

@@ -1,19 +1,30 @@
-def wordBreak(s: str, wordDict) -> bool:
-    if not s:
-        return True
+idx = 0
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
-    wordDict = set(wordDict)
+def deserialize(data):
+    """Decodes your encoded data to tree.
 
-    n = len(s)
-    dp = [False for _ in range(n + 1)]  # dp[0]对应空字串
-    dp[0] = True
-    for tail in range(1, n + 1):
-        for cut in range(0, tail + 1):
-            right_s = s[cut:tail]
-            if dp[cut] == True and s[cut:tail] in wordDict:
-                dp[cut] = True
-                break
-    return dp[-1]
+    :type data: list
+    :rtype: TreeNode
+    """
+    global idx
+    if not data or data == ['null']:
+        return None
+
+    if idx < len(data):
+        if data[idx] == 'null':
+            idx += 1
+            return None
+        else:
+            new_node = TreeNode(int(data[idx]))
+            idx += 1
+            new_node.left = deserialize(data)
+            new_node.right = deserialize(data)
+            return new_node
 
 
-wordBreak("leetcode", ["leet", "code"])
+deserialize(['1', '2', '3', 'null', 'null', '4', '5'])
