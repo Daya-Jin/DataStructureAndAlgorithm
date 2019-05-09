@@ -1,30 +1,22 @@
-idx = 0
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+def rob(nums) -> int:
+    if not nums:
+        return 0
+    if len(nums) < 3:
+        return max(nums)
 
-def deserialize(data):
-    """Decodes your encoded data to tree.
+    def rob_max(nums):
+        dp = [0 for _ in range(len(nums))]
+        dp[0] = 0
+        dp[1] = max(nums[0], nums[1])
 
-    :type data: list
-    :rtype: TreeNode
-    """
-    global idx
-    if not data or data == ['null']:
-        return None
+        for i in range(2, len(nums)):
+            dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])
 
-    if idx < len(data):
-        if data[idx] == 'null':
-            idx += 1
-            return None
-        else:
-            new_node = TreeNode(int(data[idx]))
-            idx += 1
-            new_node.left = deserialize(data)
-            new_node.right = deserialize(data)
-            return new_node
+        return dp[-1]
+
+    nums_1 = nums[1:]
+    nums_2 = nums[:-1]
+    return max(rob_max(nums_1), rob_max(nums_2))
 
 
-deserialize(['1', '2', '3', 'null', 'null', '4', '5'])
+rob([1, 2, 3, 1])
