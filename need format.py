@@ -1,22 +1,22 @@
-def rob(nums) -> int:
-    if not nums:
-        return 0
-    if len(nums) < 3:
-        return max(nums)
+def convert(s: str, numRows: int) -> str:
+    if numRows < 2 or len(s) < 2:
+        return s
 
-    def rob_max(nums):
-        dp = [0 for _ in range(len(nums))]
-        dp[0] = 0
-        dp[1] = max(nums[0], nums[1])
+    res = list()
+    len_clc = 2 * numRows - 2  # 周期长度
+    len_s = len(s)
 
-        for i in range(2, len(nums)):
-            dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])
+    for row in range(numRows):
+        idx = row
+        while idx < len_s:
+            res.append(s[idx])
+            if row != 0 and row != numRows - 1:
+                ex_idx = idx + len_clc - 2 * row
+                if ex_idx < len_s:
+                    res.append(s[ex_idx])
+            idx += len_clc
 
-        return dp[-1]
-
-    nums_1 = nums[1:]
-    nums_2 = nums[:-1]
-    return max(rob_max(nums_1), rob_max(nums_2))
+    return ''.join(res)
 
 
-rob([1, 2, 3, 1])
+convert('PINALSIGYAHRPI', 4)
