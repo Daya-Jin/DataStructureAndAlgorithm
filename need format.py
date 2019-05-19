@@ -1,22 +1,28 @@
-def convert(s: str, numRows: int) -> str:
-    if numRows < 2 or len(s) < 2:
-        return s
+def findLUSlength(strs) -> int:
+    strs = list(set(strs))    # 去重优化
+    strs.sort(key=len, reverse=True)
+    res = -1
 
-    res = list()
-    len_clc = 2 * numRows - 2  # 周期长度
-    len_s = len(s)
+    def isSub(s1, s2):
+        '''
+        判断s1是不是s2的一个子序列，len(s1)<=len(s2)
+        '''
+        i = 0
+        for ch in s2:
+            if ch == s1[i]:
+                i += 1
+                if i == len(s1):
+                    return True
+        return False
 
-    for row in range(numRows):
-        idx = row
-        while idx < len_s:
-            res.append(s[idx])
-            if row != 0 and row != numRows - 1:
-                ex_idx = idx + len_clc - 2 * row
-                if ex_idx < len_s:
-                    res.append(s[ex_idx])
-            idx += len_clc
+    for i in range(len(strs)):    # 选出的字串
+        for j in range(i):    # 比较的字串
+            if i != j and isSub(strs[i], strs[j]):
+                break
+            if j == i-1:
+                res = max(res, len(strs[i]))
 
-    return ''.join(res)
+    return res
 
 
-convert('PINALSIGYAHRPI', 4)
+findLUSlength(["aabbcc", "aabbcc","bc","bcc","aabbccc"])
