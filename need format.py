@@ -1,15 +1,15 @@
-def numSquares(n: int) -> int:
-    dp = [4]*(n+1)
-    dp[0] = 0
+def minimumTotal(triangle) -> int:
+    height, width = len(triangle), len(triangle[-1])
+    dp = [[0 for _ in range(width)] for _ in range(height-1)]
+    dp.append(triangle[-1])
 
-    for i in range(n+1):
-        for base in range(1, int(n**0.5)+1):    # 完全平方数的基数
-            new_num = i+base**2
-            if new_num <= n:
-                # 从dp[i]到dp[i+base**2]只加了一个完全平方数
-                dp[new_num] = min(dp[new_num], dp[i]+1)
+    for row in range(height-2, -1, -1):
+        for col in range(width-(height-row)+1):
+            dp[row][col] = min(dp[row+1][col],
+                               dp[row+1][col+1])+triangle[row][col]
 
-    return dp[-1]
+    return max(dp[0])
 
 
-numSquares(12)
+minimumTotal([[-1],
+              [-2, -3]])
