@@ -1,21 +1,15 @@
-def maxSubarraySumCircular(A) -> int:
-    cur_max = 0
-    max_sum = A[0]
-    cur_min = 0
-    min_sum = A[0]
+def numSquares(n: int) -> int:
+    dp = [4]*(n+1)
+    dp[0] = 0
 
-    for num in A:
-        cur_max += num
-        max_sum = max(max_sum, cur_max)
-        if cur_max < 0:
-            cur_max = 0
+    for i in range(n+1):
+        for base in range(1, int(n**0.5)+1):    # 完全平方数的基数
+            new_num = i+base**2
+            if new_num <= n:
+                # 从dp[i]到dp[i+base**2]只加了一个完全平方数
+                dp[new_num] = min(dp[new_num], dp[i]+1)
 
-        cur_min += num
-        min_sum = min(min_sum, cur_min)
-        if cur_min > 0:
-            cur_min = 0
-
-    return max(max_sum, sum(A)-min_sum)
+    return dp[-1]
 
 
-maxSubarraySumCircular([-2, -3, -1])
+numSquares(12)
