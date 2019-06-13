@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37f89aa4-385b-4ffa-9cd8-b74a1d4fc726" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicProgramming/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicProgramming/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicProgramming/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicProgramming/Untitled.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implement/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Implement/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implement/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Implement/Untitled.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Math/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Math/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/need format.py" beforeDir="false" afterPath="$PROJECT_DIR$/need format.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,24 +21,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataStructureAndAlgorithm$need_format.coverage" NAME="need format Coverage Results" MODIFIED="1560309457204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataStructureAndAlgorithm$need_format.coverage" NAME="need format Coverage Results" MODIFIED="1560344919885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1731951207">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="52" />
+          <entry key="project.closed" value="54" />
           <entry key="project.open.time.0" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="7" />
+          <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="17" />
           <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="53" />
+          <entry key="project.opened" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,12 +53,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2285" />
+          <entry key="py" value="2292" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2285" />
+          <entry key="Python" value="2292" />
         </counts>
       </usages-collector>
     </session>
@@ -63,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/need format.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="242">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -87,8 +92,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="147" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="146" />
     <option name="width" value="1540" />
     <option name="height" value="970" />
   </component>
@@ -202,15 +207,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="0" width="1232" height="776" extended-state="0" />
+    <frame x="117" y="0" width="1232" height="776" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47375888" visible="true" weight="0.33901194" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47375888" visible="true" weight="0.34327087" />
       <window_info id="Structure" order="1" sideWeight="0.52549577" side_tool="true" weight="0.27882037" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32659408" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37947124" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43545878" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -254,8 +259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/need format.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
