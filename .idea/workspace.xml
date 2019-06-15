@@ -4,16 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/need format.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37f89aa4-385b-4ffa-9cd8-b74a1d4fc726" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicProgramming/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicProgramming/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicProgramming/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicProgramming/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implement/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Implement/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implement/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Implement/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Math/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Math/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/need format.py" beforeDir="false" afterPath="$PROJECT_DIR$/need format.py" afterDir="false" />
-    </list>
+    <list default="true" id="37f89aa4-385b-4ffa-9cd8-b74a1d4fc726" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +18,18 @@
     <session id="1731951207">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="54" />
+          <entry key="project.closed" value="55" />
           <entry key="project.open.time.0" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="8" />
-          <entry key="project.open.time.6" value="17" />
+          <entry key="project.open.time.6" value="18" />
           <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="54" />
+          <entry key="project.opened" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -93,7 +84,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="146" />
+    <option name="x" value="42" />
     <option name="width" value="1540" />
     <option name="height" value="970" />
   </component>
@@ -119,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,12 +122,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tmp/src/spell2chs" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -207,9 +198,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="117" y="0" width="1232" height="776" extended-state="0" />
+    <frame x="34" y="0" width="1232" height="776" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47375888" visible="true" weight="0.34327087" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47375888" visible="true" weight="0.3492334" />
       <window_info id="Structure" order="1" sideWeight="0.52549577" side_tool="true" weight="0.27882037" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
