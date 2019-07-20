@@ -1,18 +1,27 @@
-def computeArea(A: int, B: int, C: int, D: int, E: int, F: int, G: int, H: int) -> int:
-    ld_1, ru_1, ld_2, ru_2 = (A, B), (C, D), (E, F), (G, H)
+def ranking(n: int) -> int:
+    if n < 0:
+        return -1
 
-    # 求两矩形的面积和
-    res = (ru_1[0]-ld_1[0])*(ru_1[1]-ld_1[1])  \
-        + (ru_2[0]-ld_2[0])*(ru_2[1]-ld_2[1])
+    dp = [[0] * n for _ in range(n)]
+    for row in range(n):
+        dp[row][0] = 1
+    for col in range(n):
+        dp[0][col] = 1
+    for idx in range(1, n):
+        dp[idx][idx] = dp[idx-1][idx-1]*(idx + 1)
 
-    # 重叠坐标
-    ld_overlap = (max(ld_1[0], ld_2[0]), max(ld_1[1], ld_2[1]))
-    ru_overlap = (min(ru_1[0], ru_2[0]), min(ru_1[1], ru_2[1]))
+    for row in range(1, n):
+        for col in range(1, n):
+            if row==col:
+                dp[row][col]=dp[row-1][col-1]*(row+1)
+            else:
+                dp[row][col] = (col + 1) * dp[row - 1][col] + (col + 1) * dp[row - 1][col - 1]
 
-    if ld_overlap[0] > ru_overlap[0] and ld_overlap[1] < ru_overlap[1]:
-        res -= (ru_overlap[0]-ld_overlap[0])*(ru_overlap[1]-ld_overlap[1])
+    res = 0
+    for col in range(n):
+        res += dp[-1][col]
 
     return res
 
 
-computeArea(A = -3, B = 0, C = 3, D = 4, E = 0, F = -1, G = 9, H = 2)
+print(ranking(2))
