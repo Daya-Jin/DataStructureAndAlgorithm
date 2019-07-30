@@ -1,24 +1,14 @@
-def nextGreaterElements(nums):
-    double_nums = nums+nums
-    s = list()
-    table = dict()
+def myPow(x: float, n: int) -> float:
+    if n < 0:
+        return myPow(x, abs(n))
 
-    for num in nums:
-        if not s:
-            s.append(num)
-            continue
+    if n == 0:
+        return 1
 
-        while s and num > s[-1]:
-            pre_num = s.pop()
-            table[pre_num] = num
+    if n & 1 == 0:
+        return myPow(myPow(x, n >> 1), 2)
+    else:
+        return myPow(myPow(x, n >> 1), 2) * x
 
-        s.append(num)
 
-    while s:
-        pre_num = s.pop()
-        if pre_num not in table.keys():
-            table[pre_num] = -1
-
-    return [table[num] for num in nums]
-
-nextGreaterElements([3,2,1])
+myPow(2, 2)
