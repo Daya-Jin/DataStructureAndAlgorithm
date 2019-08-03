@@ -1,55 +1,24 @@
-import sys
+def networkDelayTime(times, N: int, K: int) -> int:
+    adj_table = {idx: list() for idx in range(1, N+1)}
+    for f, t, time in times:
+        adj_table[f].append((t, time))
 
-n = int(sys.stdin.readline())
-arr = list(map(int, sys.stdin.readline().split()))
+    res = [0x7FFFFFFF]*(N+1)
+    res[K] = 0
+    q = [(K, 0)]    # (node_idx,cur_time)
+    visited = [False]*(N+1)
 
-
-class TreeNode:
-    def __init__(self, val):
-        self.val = val
-        self.left = None
-        self.right = None
-
-
-def buildTree(arr):
-    if not arr:
-        return None
-
-    n = len(arr)
-    if n == 1:
-        return TreeNode(arr[0])
-
-    root = TreeNode(arr[0])
-    i=1
-    while i<n:
-        if arr[i] > arr[0]:
-            break
-        i+=1
-
-    root.left = buildTree(arr[1:i])
-    root.right = buildTree(arr[i:])
-    return root
-
-
-def levelTrav(root):
-    res=list()
-    if not root:
-        return res
-
-    q=[root]
     while q:
-        level_size=len(q)
-        for _ in range(level_size):
-            vis_node=q.pop(0)
-            res.append(vis_node.val)
+        vis_node, cur_time = q.pop(0)
 
-            if vis_node.left:
-                q.append(vis_node.left)
-            if vis_node.right:
-                q.append(vis_node.right)
+        for t, time in adj_table[vis_node]:
+            res[t] = min(res[t], cur_time+time)
+            if not visited[t]:
+                q.append((t, cur_time+time))
 
-    return res
+        visited[vis_node] = True
 
-root = buildTree(arr)
-res=levelTrav(root)
-print(res)
+    return max(res) if max(res) < 0x7FFFFFFF else -1
+
+
+networkDelayTime(times=[[2, 1, 1], [2, 3, 1], [3, 4, 1]], N=4, K=2)
