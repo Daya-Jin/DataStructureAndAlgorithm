@@ -1,21 +1,34 @@
-def predictPartyVictory(senate: str) -> str:
-    q_D, q_R = list(), list()
-    n = len(senate)
+import sys
 
-    for idx, ch in enumerate(senate):
-        if ch == 'R':
-            q_R.append(idx)
-        else:
-            q_D.append(idx)
+n, m, k = list(map(int, sys.stdin.readline().strip().split()))
 
-    while q_D and q_R:
-        idx_D, idx_R = q_D.pop(0), q_R.pop()
-        if idx_D < idx_R:
-            q_D.append(idx_D + n)
-        else:
-            q_R.append(idx_R + n)
+adj_table = {key: list() for key in range(n + m)}
+for _ in range(k):
+    i, j = list(map(int, sys.stdin.readline().strip().split()))
+    i -= 1
+    j += n - 1
 
-    return "Radiant" if q_R else 'Dire'
+    adj_table[i].append(j)
+    adj_table[j].append(i)
 
+n_comp = 0
+visited = [False] * (n + m)
+q = list()
 
-predictPartyVictory("DRDRR")
+for idx in range(n + m):
+    if not visited[idx]:
+        q.append(idx)
+        n_comp += 1
+
+        while q:
+            vis_node = q.pop(0)
+            visited[vis_node] = True
+            for neighbor in adj_table[vis_node]:
+                if not visited[neighbor]:
+                    q.append(neighbor)
+
+for idx in range(n, n + m):
+    if len(adj_table[idx]) == 0:
+        n_comp -= 1
+
+print(n_comp - 1)
