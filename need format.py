@@ -1,37 +1,24 @@
 import sys
 
 
-def trans(ch):
-    if ord(ch) in range(48, 58):
-        return ord(ch) - 48
-    else:
-        return ord(ch) - 55
-
-
-def func(s):
-    res = list()
-    h, m = s.split(':')
-    h, m = list(reversed(list(map(trans, h)))), list(reversed(list(map(trans, m))))
-    low = max(max(h), max(m))
-    for base in range(low + 1, 61):
-        sum_h = sum_m = 0
-        for idx, num in enumerate(h):
-            sum_h += num * (base ** idx)
-        for idx, num in enumerate(m):
-            sum_m += num * (base ** idx)
-
-        if sum_h < 24 and sum_m < 60:
-            res.append(base)
+def func(x_u, y_u, xs, ys):
+    res = False
+    n = len(xs)
+    i, j = 0, n - 1
+    while i < n:
+        if ((ys[i] > y_u) != (ys[j] > y_u)
+                and (x_u < (xs[j] - xs[i]) * (y_u - ys[i]) / (ys[j] - ys[i]) + xs[i])):
+            res = not res
+        j = i
+        i += 1
 
     return res
 
 
-if __name__ == '__main__':
-    s = sys.stdin.readline().strip()
-    res = func(s)
-    if not res:
-        print('-1')
-    elif res[-1] == 60:
-        print('0')
-    else:
-        print(' '.join(map(str, res)))
+coord = sys.stdin.readline().strip().split()
+x_u, y_u = list(map(float, coord[0].split(',')))
+xs = list(map(float, [item.split(',')[0] for item in coord[1:]]))
+ys = list(map(float, [item.split(',')[1] for item in coord[1:]]))
+
+print(xs, ys, x_u, y_u)
+print(func(x_u, y_u, xs, ys))
