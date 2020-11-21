@@ -1,10 +1,3 @@
-import sys
-
-N, L = map(int, sys.stdin.readline().strip().split())
-
-cmds = [sys.stdin.readline().strip() for _ in range(L)]
-
-
 class Node:
     def __init__(self, key, val):
         self.key = key
@@ -74,11 +67,10 @@ class LRU_cache:
         del node
 
 
-lru = LRU_cache(N)
-for cmd in cmds:
-    if cmd[0] == 'g':
-        key = int(cmd.split()[-1])
-        print(lru.get(key))
-    else:
-        key, val = map(int, cmd[2:].split())
-        lru.put(key, val)
+if __name__ == "__main__":
+    obj = LRU_cache(2)
+    obj.put(2, 6)
+    obj.put(1, 5)
+    obj.put(1, 2)
+    print(obj.get(1))
+    print(obj.get(2))
